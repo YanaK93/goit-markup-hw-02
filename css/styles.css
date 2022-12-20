@@ -29,7 +29,7 @@ body {
 
 .header-logo {
   width: 44px;
-  height: 24px;
+  height: 21px;
 
   font-family: "Raleway";
   font-style: normal;
@@ -579,7 +579,7 @@ footer p {
 }
 
 .options {
-  width: 1116px;
+  width: 1212px;
 }
 
 .options .btn {
@@ -588,4 +588,27 @@ footer p {
 
 .options li {
   margin-right: 12px;
+}
+
+.options li h3 {
+  height: 24px;
+
+  /* Header 3 */
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1, 2;
+  /* identical to box height, or 120% */
+
+  text-align: center;
+
+  /* NAVY BLUE */
+
+  color: var(--subheader-color);
+}
+
+.options li a p {
+  text-align: center;
+  color: var(--subheader-color);
 }
