@@ -19,18 +19,6 @@ body {
 }
 
 .header-logo {
- 
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  /* IRIS */
-
   color: var(--header-color);
 }
 
@@ -106,7 +94,6 @@ body {
 
 .btn {
   font-family: "Roboto", sans-serif;
-  padding: 16px 32px;
   background: var(--header-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -126,7 +113,6 @@ body {
 
 .btn-portfolio {
 background: var(--cloud-color);
-
 border: 1px solid var(--another-color);
 border-radius: 4px;
 
@@ -136,6 +122,7 @@ font-weight: 500;
   letter-spacing: 0.04em;
 
   color: var(--iris-color);
+  cursor: pointer;
 }
 
 .what-we-are-doing-title {
@@ -179,8 +166,6 @@ font-weight: 500;
 }
 
 .footer-text {
-  font-family: inherit;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
@@ -236,7 +221,6 @@ footer {
   display: block;
   color: var(--first-title-color);
   text-align: center;
-  padding: 16px;
   text-decoration: none;
 }
 
