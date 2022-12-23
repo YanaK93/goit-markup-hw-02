@@ -1,5 +1,6 @@
 :root {
   --first-title-color: #ffffff;
+  --list-item-color: #ffffff;
   --header-color: #4d5ae5;
   --subheader-color: #2e2f42;
   --text-color: #000000;
@@ -56,18 +57,16 @@ body {
 
 }
 .header-item {
+ 
+}
+
+.header-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--subheader-color);
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
-.header-link {
-
+  text-decoration: none;
 }
 
 .header-mail {
@@ -101,9 +100,7 @@ body {
 
 .btn-service {
   cursor: pointer;
-}
 
-.btn-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -111,12 +108,13 @@ body {
   color: var(--first-title-color);
 }
 
-.btn-portfolio {
-background: var(--cloud-color);
-border: 1px solid var(--another-color);
-border-radius: 4px;
 
-font-weight: 500;
+.btn-portfolio {
+  background: var(--cloud-color);
+  border: 1px solid var(--another-color);
+  border-radius: 4px;
+  
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -125,12 +123,23 @@ font-weight: 500;
   cursor: pointer;
 }
 
+.btn-portfolio:hover {
+  background: var(--iris-color);
+  color: var(--first-title-color);
+}
+
+.btn-portfolio:focus {
+  background: var(--iris-color);
+  color: var(--first-title-color);
+}
+
 .what-we-are-doing-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.2rem;
+  color: var(--subheader-color);
 }
 
 .our-team-title {
@@ -139,6 +148,7 @@ font-weight: 500;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.2rem;
+  color: var(--subheader-color);
 }
 
 
@@ -192,10 +202,13 @@ footer {
   background: var(--subheader-color);
 }
 
+.our-team {
+  background-color: var(--cloud-color);
+}
 
-.our-team ul {
-  list-style-type: none;
-  overflow: hidden;
+.our-team-list-item {
+  background-color: var(--list-item-color);
+
 }
 
 .our-team-sub-header {
@@ -217,7 +230,7 @@ footer {
 
 
 
-.section li a {
+.options-link {
   display: block;
   color: var(--first-title-color);
   text-align: center;
